@@ -35,7 +35,7 @@ section {
 }
 
 .max-width {
-  /* max-width: 1700px; */
+  max-width: 1550px;
   padding: 0 80px;
   margin: auto;
 }
@@ -159,7 +159,7 @@ section .points::before {
   color: #3b325f;
   font-size: 18px;
   font-weight: 500;
-  margin-left: 25px;
+  margin-left: 45px;
   transition: color 0.3s ease;
 }
 
@@ -261,10 +261,10 @@ section .points::before {
   color: #3b325f;
   font-family: Poppins;
   width: 100%;
-  font-size: 40px;
+  font-size: 44px;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 60px;
   align-items: center;
 }
 
@@ -282,7 +282,7 @@ section .points::before {
   display: inline-block;
   background: #4070f4;
   color: white;
-  font-size: 14px;
+  font-size: 24px;
   padding: 12px 36px;
   margin-top: 20px;
   font-family: Poppins;
@@ -297,7 +297,7 @@ section .points::before {
   display: inline-block;
   background: transparent;
   color: #4070f4;
-  font-size: 14px;
+  font-size: 24px;
   padding: 12px 36px;
   margin-top: 20px;
   margin-left: 15px;
@@ -308,7 +308,7 @@ section .points::before {
   text-decoration: none;
 }
 .home .home-content .img-contain {
-  width: 50%;
+  width: 100%;
 }
 .home .home-content img {
   width: 100%;
@@ -472,33 +472,43 @@ section .points::before {
 
 .section4 .section4-part1 {
   display: flex;
-  padding: 3%;
+  padding: 3% 0%;
   vertical-align: middle;
 }
-
-.section4 img {
-  width: 50%;
+.section4 .section4-content .part1-img,
+.section4 .section4-content .part2-img,
+.section4 .section4-content .part3-img,
+.section4 .section4-content .part4-img{
+  width: 100%;
 }
+.section4 .section4-content .part1-text,
+.section4 .section4-content .part2-text,
+.section4 .section4-content .part3-text,
+.section4 .section4-content .part4-text{
+  width: 100%;
+  padding: 5% 0%;
+}
+
 
 .section4 .section4-part2 {
   display: flex;
-  padding: 3%;
+  padding: 3% 0%;
 }
 
-.section4 .section4-part2 #part2-text {
-  color: #382e5d;
-  text-align: left;
-  font-family: Poppins;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 50px;
+.section4 .section4-part2 .part2-text, 
+.section4 .section4-part4 .part4-text{
+  padding-right: 10%;
+  /* 156.25% */
+}
+.section4 .section4-part1 .part1-text, 
+.section4 .section4-part3 .part3-text{
+  padding-left: 4%;
   /* 156.25% */
 }
 
 .section4 .section4-part3 {
   display: flex;
-  padding: 3%;
+  padding: 3% 0%;
 }
 
 .section4 .section4-part3 #part3-text {
@@ -514,12 +524,10 @@ section .points::before {
 
 .section4 .section4-part4 {
   display: flex;
-  padding: 3%;
+  padding: 3% 0%;
 }
 
-.section4 .section4-part4 img {
-  width: 50%;
-}
+
 
 /* another section */
 .anotherSection {
@@ -592,6 +600,11 @@ section .points::before {
   font-style: normal;
   font-weight: 700;
 }
+.section5 .review-container img {
+  border-radius: 50%;
+  width: 146px;
+  height: 146px;
+}
 
 .section5 .jeweller-name {
   color: #382e5d;
@@ -627,21 +640,23 @@ section .points::before {
 .section5 .max-width .card4,
 .section5 .max-width .card5 {
   background-color: #e9eeff;
-  width: 200.8px;
-  height: 116.91px;
-  padding: 4%;
+  width: 150px;
+  height: 150px;
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
 }
 .section5 .max-width .card:hover {
   background-color: #e9eeff;
 }
-
-.carousel .owl-carousel .box {
-  padding: 3%;
-  align-items: center;
+.carousel.owl-carousel{
+  padding-left: 4%;
 }
-
+.owl-item.active{
+  margin-right: 0px;
+}
 .carousel.owl-carousel img {
-  max-width: 85%;
+  max-width: 100%;
   align-items: center;
 }
 

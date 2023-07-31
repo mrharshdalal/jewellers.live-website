@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+body {
+  background: url(images/Rectangle\ 4703@2x.png) no-repeat center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* all similar content styling codes */
+section {
+  padding: 100px 0;
+}
+
+.max-width {
+  max-width: 1550px;
+  padding: 0 80px;
+  margin: auto;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 8px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 100px;
+  height: 3px;
+  background: #e9b640;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 25%;
+  font-size: 20px;
+  color: #e9b640;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.my-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: "Poppins";
+  transition: all 0.3s ease;
+}
+
+.my-navbar.sticky {
+  padding: 15px 0;
+  background: white;
+}
+
+.my-navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-navbar .my-logo a {
+  color: #3b325f;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.my-navbar .my-logo a span {
+  color: #e9b640;
+  transition: all 0.3s ease;
+}
+
+.my-navbar.sticky .my-logo a span {
+  color: #3b325f;
+}
+
+.my-navbar .my-menu li {
+  list-style: none;
+  display: inline-block;
+}
+.my-navbar .my-menu-btn:hover {
+  text-decoration: none;
+}
+
+.my-navbar .my-menu li a {
+  display: block;
+  color: #3b325f;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 45px;
+  transition: color 0.3s ease;
+}
+
+.my-navbar .my-menu li a:hover {
+  color: #e9b640;
+}
+
+.my-navbar.sticky .my-menu li a:hover {
+  color: #e9b640;
+}
+
+.my-menu-btn {
+  color: #3b325f;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+/* the story styling */
+
+.theStory {
+  padding-top: 200px;
+}
+.theStory .theStory-heading {
+  color: #e9b640;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 93.75% */
+}
+.theStory .theStory-text {
+  color: var(--t-2, #6e668a);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
+}
+.theStory .theStory-text .theStory-list {
+  padding-left: 2%;
+}
+
+/* our mission styling */
+
+.ourMission .ourMission-heading {
+  color: #382e5d;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 156.25% */
+}
+.ourMission .max-width .mission-container {
+  padding: 4% 5%;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 15px 20px 10px rgba(110, 102, 138, 0.1);
+  color: var(--t-2, #6e668a);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+}
+/* ourWork section styling */
+.ourWork .ourWork-heading {
+  color: #382e5d;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 156.25% */
+}
+.ourWork .mission-container {
+  color: var(--t-1, #3b325f);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+
+/* we make jewellers styling */
+.weMakeJewellers {
+  background: white;
+  display: flex;
+}
+.weMakeJewellers .weMakeJewellers-heading {
+  color: var(--t-1, #3b325f);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 28.2px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 127.66% */
+}
+.weMakeJewellers .weMakeJewellers-subheading {
+  color: var(--e-9-b-640, #e9b640);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 43.2px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 83.333% */
+}
+
+/* our squad section styling */
+.ourSquad .ourSquad-heading {
+  color: #382e5d;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 156.25% */
+}
+.ourSquad .box {
+  background: url(images/Rectangle\ 6545.png);
+  border-radius: 0px 0px 4.625px 4.625px;
+  background: rgba(172, 191, 255, 0.17);
+  padding: 5% 8%;
+}
+.ourSquad .card .squadName {
+  color: var(--t-1, #3b325f);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px; /* 138.889% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ourSquad .card .squadRole {
+    color: var(--t-1, #3B325F);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 25px; /* 178.571% */
+}
+.ourSquad .box .linkedin {
+  border-radius: 4px;
+  background: var(--basic, #fff);
+  margin-top: 10px;
+  width: 30px;
+  height: 31.208px;
+  flex-shrink: 0;
+}
+.carousel.owl-carousel {
+  padding-left: 4%;
+}
+.owl-item.active {
+  margin-right: 0px;
+}
+.carousel.owl-carousel img {
+  max-width: 100%;
+  align-items: center;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid #4070f4 !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: #4070f4 !important;
+}
+
+/* footer styling */
+footer {
+  background: url(images/footer.png) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  text-align: left;
+  height: 100%;
+}
+footer #logo {
+  color: #3b325f;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+}
+footer span a {
+  color: #382e5d;
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+.footer-container {
+  align-items: left;
+  padding: 3%;
+}
+.footer-container .social-icons a {
+  margin-left: 6px;
+}
+.footer-container p {
+  color: var(--body, #494949);
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+}
+.footer-container #copyright {
+  color: #999;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+}
+.footer-container #col2 {
+  text-decoration: none;
+  color: #083863;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  cursor: pointer;
+}
+.footer-container #col2 a {
+  color: #083863;
+}
+.contact-block {
+  color: var(--t-2, #6e668a);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px; /* 135.714% */
+}
