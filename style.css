@@ -458,7 +458,7 @@ section .points::before {
   line-height: 50px;
   /* 156.25% */
 }
-.section4 .points{
+.section4 .points {
   margin-top: 18%;
 }
 
@@ -730,6 +730,10 @@ section .points::before {
 }
 
 .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.faq-content {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
 }
@@ -1172,7 +1176,39 @@ footer span a:hover {
   .section5 .card {
     min-height: 550px;
   }
-  .footer-container{
+  .faq-container .faq-container-content .faq-heading {
+    color: #382e5d;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+    text-align: left !important;
+  }
+  .faq-container .card {
+    padding: 2% !important;
+  }
+  .faq-content {
+    box-shadow: 0 0px 0px rgb(255, 255, 255);
+    padding: 0px !important;
+  }
+  .faq-container .faq-container-content .question {
+    color: #3b325f;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 16.8px */
+  }
+  .faq-container .faq-container-content .collapse {
+    color: #6e668a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 156%; /* 18.72px */
+  }
+  .footer-container {
     margin-top: 300px;
   }
 }
