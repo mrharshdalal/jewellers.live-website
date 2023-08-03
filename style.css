@@ -706,7 +706,10 @@ section .points::before {
   font-weight: 500;
   line-height: 160%;
 }
-.faq-container .collapse {
+#collapse-example1,
+#collapse-example2,
+#collapse-example3,
+#collapse-example4 {
   color: #6e668a;
 
   /* Body/Defolt font */
@@ -1200,7 +1203,10 @@ footer span a:hover {
     font-weight: 600;
     line-height: 140%; /* 16.8px */
   }
-  .faq-container .faq-container-content .collapse {
+  #collapse-example1,
+  #collapse-example2,
+  #collapse-example3,
+  #collapse-example4 {
     color: #6e668a;
     font-family: Poppins;
     font-size: 12px;

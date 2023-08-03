@@ -37,7 +37,7 @@ section {
 
 .max-width {
   max-width: 1550px;
-  padding: 0 80px;
+  padding: 0px 80px;
   margin: auto;
 }
 section .title {
@@ -133,6 +133,7 @@ section .title::after {
   color: #e9b640;
 }
 
+/* my-menu btn styling */
 .my-menu-btn {
   color: #3b325f;
   font-size: 23px;
@@ -177,7 +178,6 @@ section .title::after {
   line-height: 50px; /* 156.25% */
 }
 .ourMission .max-width .mission-container {
-  padding: 4% 5%;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0px 15px 20px 10px rgba(110, 102, 138, 0.1);
@@ -377,4 +377,82 @@ footer span a:hover {
   font-style: normal;
   font-weight: 500;
   line-height: 19px; /* 135.714% */
+}
+@media (max-width: 947px) {
+  .my-menu-btn {
+    display: block;
+    z-index: 999;
+    padding: 0;
+  }
+  .my-navbar .my-menu li a {
+    color: #e9b640;
+  }
+
+  .my-menu-btn i.active:before {
+    content: "\f00d";
+  }
+
+  .my-navbar .my-menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .my-navbar .my-menu.active {
+    left: 0;
+  }
+  .my-navbar {
+    position: fixed;
+  }
+
+  .my-navbar .my-menu li {
+    display: block;
+  }
+
+  .my-navbar .my-menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+}
+
+
+@media (max-width: 520px) {
+  .max-width{
+    padding: 0px 50px;
+  }
+  section{
+    padding: 50px 0;
+  }
+  .my-navbar {
+    width: 100%;
+  }
+  .my-navbar .my-logo a{
+    font-size: 24px;
+  }
+  .my-menu.active {
+    width: 100%;
+  }
+  .my-navbar .max-width {
+    display: flex;
+  }
+
+  .theStory{
+    padding-top: 130px;
+  }
+  .theStory .theStory-text{
+    margin-top: 10%;
+  }
+  .ourMission .mission-container{
+    margin-top: 0;
+  }
+  .weMakeJewellers .max-width img{
+    
+  }
 }
